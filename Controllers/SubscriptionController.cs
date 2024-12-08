@@ -19,6 +19,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpGet]
+        //[Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<IEnumerable<Subscription>>> GetAllSubscriptions()
         {
             var subscriptions = await _subscriptionService.GetAllSubscriptionsAsync();
@@ -26,6 +27,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpGet("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<Subscription>> GetSubscriptionById(int id)
         {
             var subscription = await _subscriptionService.GetSubscriptionByIdAsync(id);
@@ -35,6 +37,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPost]
+        //[Authorize(Policy = "AdminTrainerNutritionistOnly")]
         public async Task<ActionResult<Subscription>> CreateSubscription(Subscription subscription)
         {
             var createdSubscription = await _subscriptionService.CreateSubscriptionAsync(subscription);
@@ -42,6 +45,9 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPut("{id}")]
+        //[Authorize(Policy = "AdminTrainerNutritionistOnly")]
+
+
         public async Task<IActionResult> UpdateSubscription(int id, Subscription subscription)
         {
             if (id != subscription.SubscriptionId)
@@ -51,6 +57,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpDelete("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<IActionResult> DeleteSubscription(int id)
         {
             await _subscriptionService.DeleteSubscriptionAsync(id);

@@ -37,9 +37,10 @@ namespace FitnessWorkoutMgmnt.Repository
                 return null;
 
             existingSubscription.SubscriptionType = subscription.SubscriptionType;
+            existingSubscription.UserId = subscription.UserId;
             existingSubscription.StartDate = subscription.StartDate;
             existingSubscription.EndDate = subscription.EndDate;
-            // Update other fields
+            existingSubscription.PaymentStatus = subscription.PaymentStatus;
 
             await _context.SaveChangesAsync();
             return existingSubscription;

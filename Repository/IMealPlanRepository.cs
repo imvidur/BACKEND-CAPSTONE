@@ -6,6 +6,7 @@ namespace FitnessWorkoutMgmnt.Repository
     {
         Task<IEnumerable<MealPlan>> GetMealPlansByUserId(int userId);
         Task<MealPlan> AddMealPlan(MealPlan mealPlan);
+        Task<IEnumerable<MealPlan>> GetAllFitnessClassesAsync();
         Task<MealPlan> UpdateMealPlan(MealPlan mealPlan);
         Task DeleteMealPlan(int mealPlanId);
     }

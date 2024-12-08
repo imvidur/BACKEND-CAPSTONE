@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.AuthController",
+    "Method": "GetDashboardData",
+    "RelativePath": "api/Auth/getData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessWorkoutMgmnt.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -59,6 +69,22 @@
   },
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.ChallengesController",
+    "Method": "GetChallengesById",
+    "RelativePath": "api/Challenges/{challengeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "challengeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessWorkoutMgmnt.Controllers.ChallengesController",
     "Method": "UpdateChallenge",
     "RelativePath": "api/Challenges/{challengeId}",
     "HttpMethod": "PUT",
@@ -80,14 +106,14 @@
   },
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.ChallengesController",
-    "Method": "GetChallengesForUser",
-    "RelativePath": "api/Challenges/user/{userId}",
-    "HttpMethod": "GET",
+    "Method": "DeleteChallenge",
+    "RelativePath": "api/Challenges/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -205,6 +231,26 @@
   },
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.MealPlansController",
+    "Method": "GetAllFitnessClasses",
+    "RelativePath": "api/MealPlans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessWorkoutMgmnt.Models.MealPlan, FitnessWorkoutMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessWorkoutMgmnt.Controllers.MealPlansController",
     "Method": "CreateMealPlan",
     "RelativePath": "api/MealPlans",
     "HttpMethod": "POST",
@@ -301,18 +347,13 @@
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.MessageController",
     "Method": "GetMessages",
-    "RelativePath": "api/Message/{senderId}/{receiverId}",
+    "RelativePath": "api/Message/{senderId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "senderId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "receiverId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -437,12 +478,22 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "clientId",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessWorkoutMgmnt.Models.ProgressTracking, FitnessWorkoutMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.ProgressTrackingController",
@@ -677,6 +728,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessWorkoutMgmnt.Controllers.WorkoutController",
+    "Method": "GetAllWorkoutPlans",
+    "RelativePath": "api/Workout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessWorkoutMgmnt.Models.WorkoutPlan, FitnessWorkoutMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "FitnessWorkoutMgmnt.Controllers.WorkoutController",

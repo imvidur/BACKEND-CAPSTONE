@@ -32,6 +32,8 @@ namespace FitnessWorkoutMgmnt.Repository
 
         public async Task<User> UpdateUserAsync(int id, User user)
         {
+            Console.WriteLine($"Updating user with ID: {id}");
+            Console.WriteLine($"Received data: Username={user.Username}, Email={user.Email}, Role={user.Role}, Password={user.PasswordHash}, PhoneNumber={user.PhoneNumber}");
             var existingUser = await GetUserByIdAsync(id);
             if (existingUser == null)
                 return null;
@@ -46,6 +48,7 @@ namespace FitnessWorkoutMgmnt.Repository
             // Update other fields
 
             await _context.SaveChangesAsync();
+            Console.WriteLine("Changes saved to the database.");
             return existingUser;
         }
 

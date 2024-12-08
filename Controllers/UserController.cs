@@ -21,6 +21,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpGet]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<ActionResult<IEnumerable<User>>> GetAllUsers()
         {
             var users = await _userService.GetAllUsersAsync();
@@ -28,6 +30,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpGet("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<ActionResult<User>> GetUserById(int id)
         {
             var user = await _userService.GetUserByIdAsync(id);
@@ -37,6 +41,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPost]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<ActionResult<User>> CreateUser(User user)
         {
             var createdUser = await _userService.CreateUserAsync(user);
@@ -44,6 +50,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPut("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<IActionResult> UpdateUser(int id, User user)
         {
             if (id != user.UserId)
@@ -55,6 +63,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpDelete("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
+
         public async Task<IActionResult> DeleteUser(int id)
         {
             await _userService.DeleteUserAsync(id);

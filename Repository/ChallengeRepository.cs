@@ -25,20 +25,38 @@ namespace FitnessWorkoutMgmnt.Repository
             return challenge;
         }
 
-        public async Task<IEnumerable<Challenge?>> GetChallengesForUser(int userId)
+        public async Task<Challenge> GetChallengeByIdAsync(int id)
         {
-            return await _context.UserChallenges
-                                 .Where(uc => uc.UserId == userId)
-                                 .Select(uc => uc.Challenge)
-                                 .ToListAsync();
+            return await _context.Challenges.FirstOrDefaultAsync(s => s.ChallengeId == id);
         }
 
 
-        public async Task<Challenge> UpdateChallenge(Challenge challenge)
+        public async Task<Challenge> UpdateChallenge(int challengeId, Challenge challenge)
         {
-            _context.Challenges.Update(challenge);
+            var existingSubscription = await GetChallengeByIdAsync(challengeId);
+            if (existingSubscription == null)
+                return null;
+
+            existingSubscription.Name = challenge.Name;
+            existingSubscription.StartDate = challenge.StartDate;
+            existingSubscription.EndDate = challenge.EndDate;
+            existingSubscription.UserId = challenge.UserId;
+            existingSubscription.Goal = challenge.Goal;
+            existingSubscription.Status = challenge.Status;
+
             await _context.SaveChangesAsync();
-            return challenge;
+            return existingSubscription;
+        }
+
+
+        public async Task DeleteChallengeAsync(int id)
+        {
+            var challenge = await GetChallengeByIdAsync(id);
+            if (challenge != null)
+            {
+                _context.Challenges.Remove(challenge);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

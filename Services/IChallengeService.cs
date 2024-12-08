@@ -6,7 +6,9 @@ namespace FitnessWorkoutMgmnt.Services
     {
         Task<IEnumerable<Challenge>> GetAllChallenges();
         Task<Challenge> AddChallenge(Challenge challenge);
-        Task<IEnumerable<Challenge>> GetUserChallenges(int userId);
-        Task<Challenge> UpdateChallenge(Challenge challenge);
+        Task<Challenge> GetUserChallenges(int userId);
+        Task<Challenge> UpdateChallenge(int challengeId, Challenge challenge);
+
+        Task DeleteChallenge(int challengeId);
     }
 }

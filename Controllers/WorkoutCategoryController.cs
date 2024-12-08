@@ -19,6 +19,8 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // GET: api/WorkoutCategory
         [HttpGet]
+        //[Authorize(Policy = "AdminTrainerNutritionistOnly")]
+
         public async Task<ActionResult<IEnumerable<WorkoutCategory>>> GetAllCategories()
         {
             var categories = await _categoryService.GetAllCategoriesAsync();
@@ -27,6 +29,8 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // GET: api/WorkoutCategory/{id}
         [HttpGet("{id}")]
+        //[Authorize(Policy = "AdminTrainerNutritionistOnly")]
+
         public async Task<ActionResult<WorkoutCategory>> GetCategoryById(int id)
         {
             var category = await _categoryService.GetCategoryByIdAsync(id);
@@ -41,6 +45,8 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // POST: api/WorkoutCategory
         [HttpPost]
+        //[Authorize(Policy = "AdminTrainerOnly")]
+
         public async Task<ActionResult<WorkoutCategory>> CreateCategory(WorkoutCategory category)
         {
             if (category == null || string.IsNullOrEmpty(category.Name))
@@ -55,6 +61,8 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // PUT: api/WorkoutCategory/{id}
         [HttpPut("{id}")]
+        //[Authorize(Policy = "AdminTrainerOnly")]
+
         public async Task<IActionResult> UpdateCategory(int id, WorkoutCategory category)
         {
             if (id != category.Id)
@@ -74,6 +82,8 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // DELETE: api/WorkoutCategory/{id}
         [HttpDelete("{id}")]
+        //[Authorize(Policy = "AdminTrainerOnly")]
+
         public async Task<IActionResult> DeleteCategory(int id)
         {
             await _categoryService.DeleteCategoryAsync(id);

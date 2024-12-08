@@ -4,6 +4,7 @@ namespace FitnessWorkoutMgmnt.Services
 {
     public interface IMealPlanService
     {
+        Task<IEnumerable<MealPlan>> GetAllFitnessClassesAsync();
         Task<IEnumerable<MealPlan>> GetMealPlansByUserId(int userId);
         Task<MealPlan> CreateMealPlan(MealPlan mealPlan);
         Task<MealPlan> ModifyMealPlan(MealPlan mealPlan);

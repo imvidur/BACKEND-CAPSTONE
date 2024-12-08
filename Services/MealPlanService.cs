@@ -11,7 +11,10 @@ namespace FitnessWorkoutMgmnt.Services
         {
             _mealPlanRepository = mealPlanRepository;
         }
-
+        public async Task<IEnumerable<MealPlan>> GetAllFitnessClassesAsync()
+        {
+            return await _mealPlanRepository.GetAllFitnessClassesAsync();
+        }
         public async Task<IEnumerable<MealPlan>> GetMealPlansByUserId(int userId)
         {
             return await _mealPlanRepository.GetMealPlansByUserId(userId);

@@ -1,5 +1,6 @@
 ﻿using FitnessWorkoutMgmnt.Models;
 using FitnessWorkoutMgmnt.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,15 @@ namespace FitnessWorkoutMgmnt.Controllers
             _mealPlanService = mealPlanService;
         }
 
+
+        [HttpGet]
+        //[Authorize(Policy ="AdminTrainerNutritionistOnly")]
+        public async Task<ActionResult<IEnumerable<MealPlan>>> GetAllFitnessClasses()
+        {
+            var fitnessClasses = await _mealPlanService.GetAllFitnessClassesAsync();
+            return Ok(fitnessClasses);
+        }
+
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetMealPlans(int userId)
         {
@@ -24,6 +34,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPost]
+        //[Authorize(Policy ="AdminTrainerNutritionistOnly")]
+
         public async Task<IActionResult> CreateMealPlan([FromBody] MealPlan mealPlan)
         {
             var createdMealPlan = await _mealPlanService.CreateMealPlan(mealPlan);
@@ -31,6 +43,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPut("{mealPlanId}")]
+        //[Authorize(Policy ="AdminTrainerNutritionistOnly")]
+
         public async Task<IActionResult> UpdateMealPlan(int mealPlanId, [FromBody] MealPlan mealPlan)
         {
             if (mealPlanId != mealPlan.MealPlanId)
@@ -41,6 +55,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpDelete("{mealPlanId}")]
+        //[Authorize(Policy ="AdminTrainerNutritionistOnly")]
+
         public async Task<IActionResult> DeleteMealPlan(int mealPlanId)
         {
             await _mealPlanService.RemoveMealPlan(mealPlanId);

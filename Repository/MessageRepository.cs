@@ -13,13 +13,12 @@ namespace FitnessWorkoutMgmnt.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<Message>> GetMessagesBetweenUsers(int senderId, int receiverId)
+        public async Task<IEnumerable<Message>> GetMessagesBetweenUsers(int senderId)
         {
             return await _context.Messages
-                                 .Where(m => (m.SenderId == senderId && m.ReceiverId == receiverId) ||
-                                             (m.SenderId == receiverId && m.ReceiverId == senderId))
-                                 .OrderBy(m => m.DateSent)
-                                 .ToListAsync();
+            .Where(m => m.SenderId == senderId)
+            .OrderByDescending(m => m.DateSent)
+            .ToListAsync();
         }
 
         public async Task<Message> SendMessage(Message message)

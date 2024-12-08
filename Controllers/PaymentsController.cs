@@ -13,7 +13,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         private readonly IPaymentService _paymentService = paymentService;
 
         [HttpGet]
-        [Authorize(Policy = "ClientOnly")]
+        //[Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<IEnumerable<Payment>>> GetAllPayments()
         {
             var payments = await _paymentService.GetAllPaymentsAsync();
@@ -21,6 +21,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpGet("{id}")]
+        //[Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<Payment>> GetPaymentById(int id)
         {
             var payment = await _paymentService.GetPaymentByIdAsync(id);
@@ -31,7 +32,7 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         [HttpPost]
         //[Authorize(Policy = "AdminOnly")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> ProcessPayment([FromBody] Payment payment)
         {
             var processedPayment = await _paymentService.ProcessPayment(payment);
@@ -41,7 +42,7 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         [HttpPut("{id}")]
         //[Authorize(Policy = "AdminOnly")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdatePayment(int id, Payment payment)
         {
             if (id != payment.Id)
@@ -52,7 +53,7 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         [HttpDelete("{id}")]
         //[Authorize(Policy = "AdminOnly")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeletePayment(int id)
         {
             await _paymentService.DeletePaymentAsync(id);

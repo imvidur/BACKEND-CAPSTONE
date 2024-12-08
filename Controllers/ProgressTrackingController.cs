@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace FitnessWorkoutMgmnt.Controllers
 {
@@ -21,26 +22,61 @@ namespace FitnessWorkoutMgmnt.Controllers
 
         // GET: api/progresstracking/my-progress
         [HttpGet("my-progress")]
-        public async Task<IActionResult> GetMyProgress(int userId)
+        //[Authorize(Policy = "ClientTrainerOnly")]
+        public async Task<ActionResult<IEnumerable<ProgressTracking>>> GetMyProgress([FromQuery] int clientId)
         {
-            var progress = await _context.ProgressTrackings
-                                         .FirstOrDefaultAsync(p => p.UserId == userId);
-
-            if (progress == null)
+            if (clientId <= 0)
             {
-                return NotFound("No progress data found.");
+                return BadRequest("Invalid client ID.");
+            }
+
+            var progress = await _context.ProgressTrackings
+                                         .Where(p => p.UserId == clientId)
+                                         .ToListAsync();
+
+            if (!progress.Any())
+            {
+                return NotFound("No progress data found for the specified client.");
             }
 
             return Ok(progress);
         }
 
+
         [HttpPost("update-progress")]
+        //[Authorize(Policy = "TrainerNutritionistOnly")]
         public async Task<IActionResult> UpdateClientProgress([FromBody] ProgressTracking progress)
         {
-            _context.ProgressTrackings.Add(progress);
-            await _context.SaveChangesAsync();
+            if (progress == null || progress.UserId <= 0)
+            {
+                return BadRequest("Invalid progress data.");
+            }
 
-            return Ok(progress);
+            // Check if a progress record for this client already exists for the given date.
+            var existingProgress = await _context.ProgressTrackings
+                                                 .FirstOrDefaultAsync(p => p.UserId == progress.UserId && p.Date.Date == progress.Date.Date);
+
+            if (existingProgress != null)
+            {
+                // Update existing record
+                existingProgress.Weight = progress.Weight;
+                existingProgress.BodyFatPercentage = progress.BodyFatPercentage;
+                existingProgress.MuscleMass = progress.MuscleMass;
+                existingProgress.Notes = progress.Notes;
+
+                _context.ProgressTrackings.Update(existingProgress);
+                await _context.SaveChangesAsync();
+
+                return Ok(existingProgress);
+            }
+            else
+            {
+                // No existing record, create a new one
+                _context.ProgressTrackings.Add(progress);
+                await _context.SaveChangesAsync();
+
+                return Ok(progress);
+            }
         }
     }
 }

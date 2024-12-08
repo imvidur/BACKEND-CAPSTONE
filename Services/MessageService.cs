@@ -12,9 +12,9 @@ namespace FitnessWorkoutMgmnt.Services
             _messageRepository = messageRepository;
         }
 
-        public async Task<IEnumerable<Message>> GetMessagesBetweenUsers(int senderId, int receiverId)
+        public async Task<IEnumerable<Message>> GetMessagesBetweenUsers(int senderId)
         {
-            return await _messageRepository.GetMessagesBetweenUsers(senderId, receiverId);
+            return await _messageRepository.GetMessagesBetweenUsers(senderId);
         }
 
         public async Task<Message> SendMessage(Message message)

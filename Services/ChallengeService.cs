@@ -22,14 +22,21 @@ namespace FitnessWorkoutMgmnt.Services
             return await _challengeRepository.CreateChallenge(challenge);
         }
 
-        public async Task<IEnumerable<Challenge>> GetUserChallenges(int userId)
+        public async Task<Challenge> GetUserChallenges(int userId)
         {
-            return await _challengeRepository.GetChallengesForUser(userId);
+            return await _challengeRepository.GetChallengeByIdAsync(userId);
         }
 
-        public async Task<Challenge> UpdateChallenge(Challenge challenge)
+        public async Task<Challenge> UpdateChallenge(int challengeId, Challenge challenge)
         {
-            return await _challengeRepository.UpdateChallenge(challenge);
+            return await _challengeRepository.UpdateChallenge(challengeId, challenge);
         }
+
+        public async Task DeleteChallenge(int challengeId)
+        {
+            await _challengeRepository.DeleteChallengeAsync(challengeId);
+        }
+
+
     }
 }

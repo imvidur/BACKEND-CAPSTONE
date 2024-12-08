@@ -13,29 +13,33 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 
-var jwtval = builder.Configuration.GetSection("JwtSettings");
-var key = Encoding.UTF8.GetBytes(jwtval["SecretKey"]);
+var jwtval = builder.Configuration.GetSection("JwtSettings"); 
+var secretKey = jwtval["SecretKey"];
+if (string.IsNullOrEmpty(secretKey))
+{
+    throw new InvalidOperationException("JwtSettings:SecretKey is missing or empty.");
+}
+
+var key = Encoding.UTF8.GetBytes(secretKey);
 
 builder.Services.AddDbContext<FitnessDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //authentication
-builder.Services.AddAuthentication(i =>
-{
-    i.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    i.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(i =>
-{
-    i.TokenValidationParameters = new TokenValidationParameters
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtval["Issuer"],
-        ValidAudience = jwtval["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(key)
-    };
-});
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtval["Issuer"],
+            ValidAudience = jwtval["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(key)
+        };
+    });
+
 
 builder.Services.AddCors(options =>
 {
@@ -110,11 +114,22 @@ builder.Services.AddScoped<JwtService>();
 //    .AddPolicy("ClientOnly", policy => policy.RequireRole("Client"))
 //    .AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
 
-builder.Services.AddAuthorization(i =>
-{
-    i.AddPolicy("ClientOnly", j => j.RequireRole("Client"));
-    i.AddPolicy("All", j => j.RequireRole("Admin", "User"));
-});
+//builder.Services.AddAuthorization(i =>
+//{
+//    i.AddPolicy("ClientOnly", j => j.RequireRole("Client"));
+//    i.AddPolicy("All", j => j.RequireRole("Admin", "User"));
+//});
+
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("TrainerOnly", policy => policy.RequireRole("Trainer"))
+    .AddPolicy("NutritionistOnly", policy => policy.RequireRole("Nutritionist"))
+    .AddPolicy("ClientOnly", policy => policy.RequireRole("Client"))
+    .AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"))
+    .AddPolicy("AdminTrainerNutritionistOnly", policy => policy.RequireRole("Admin","Trainer","Nutritionist"))
+    .AddPolicy("TrainerNutritionistOnly", policy => policy.RequireRole("Trainer","Nutritionist"))
+    .AddPolicy("ClientTrainerOnly", policy => policy.RequireRole("Client","Trainer"));
+
+
 
 
 builder.Services.AddControllers();
@@ -135,5 +150,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();

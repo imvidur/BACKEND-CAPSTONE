@@ -18,6 +18,10 @@ namespace FitnessWorkoutMgmnt.Repository
             return await _context.MealPlans.Where(mp => mp.UserId == userId).ToListAsync();
         }
 
+        public async Task<IEnumerable<MealPlan>> GetAllFitnessClassesAsync()
+        {
+            return await _context.MealPlans.ToListAsync();
+        }
         public async Task<MealPlan> AddMealPlan(MealPlan mealPlan)
         {
             _context.MealPlans.Add(mealPlan);

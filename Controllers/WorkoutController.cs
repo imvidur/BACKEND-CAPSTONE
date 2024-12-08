@@ -36,9 +36,18 @@ namespace FitnessWorkoutMgmnt.Controllers
             return CreatedAtAction(nameof(GetWorkoutPlan), new { planId = plan.PlanId }, plan);
         }
 
+        [HttpGet]
+        //[Authorize(Policy = "AdminTrainerOnly")]
+
+        public async Task<ActionResult<IEnumerable<WorkoutPlan>>> GetAllWorkoutPlans() { 
+            var workoutPlans = await _context.WorkoutPlans.ToListAsync();
+            return Ok(workoutPlans); 
+        }
 
         // GET /api/WorkoutPlan/{planId}
         [HttpGet("WorkoutPlan/{planId}")]
+        //[Authorize(Policy = "AdminTrainerOnly")]
+
         public async Task<IActionResult> GetWorkoutPlan(int planId)
         {
             var plan = await _context.WorkoutPlans.FindAsync(planId);

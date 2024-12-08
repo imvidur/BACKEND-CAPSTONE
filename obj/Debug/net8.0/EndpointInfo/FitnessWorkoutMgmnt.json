@@ -67,6 +67,18 @@
         }
       }
     },
+    "/api/Auth/getData": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Challenges": {
       "get": {
         "tags": [
@@ -108,14 +120,14 @@
         }
       }
     },
-    "/api/Challenges/user/{userId}": {
+    "/api/Challenges/{challengeId}": {
       "get": {
         "tags": [
           "Challenges"
         ],
         "parameters": [
           {
-            "name": "userId",
+            "name": "challengeId",
             "in": "path",
             "required": true,
             "schema": {
@@ -129,9 +141,7 @@
             "description": "Success"
           }
         }
-      }
-    },
-    "/api/Challenges/{challengeId}": {
+      },
       "put": {
         "tags": [
           "Challenges"
@@ -166,6 +176,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Challenges/{id}": {
+      "delete": {
+        "tags": [
+          "Challenges"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -358,30 +391,43 @@
         }
       }
     },
-    "/api/MealPlans/{userId}": {
+    "/api/MealPlans": {
       "get": {
         "tags": [
           "MealPlans"
         ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MealPlan"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MealPlan"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MealPlan"
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    },
-    "/api/MealPlans": {
+      },
       "post": {
         "tags": [
           "MealPlans"
@@ -405,6 +451,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/MealPlans/{userId}": {
+      "get": {
+        "tags": [
+          "MealPlans"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -475,7 +544,7 @@
         }
       }
     },
-    "/api/Message/{senderId}/{receiverId}": {
+    "/api/Message/{senderId}": {
       "get": {
         "tags": [
           "Message"
@@ -483,15 +552,6 @@
         "parameters": [
           {
             "name": "senderId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "receiverId",
             "in": "path",
             "required": true,
             "schema": {
@@ -756,7 +816,7 @@
         ],
         "parameters": [
           {
-            "name": "userId",
+            "name": "clientId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -766,7 +826,33 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProgressTracking"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProgressTracking"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProgressTracking"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1199,6 +1285,44 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Workout": {
+      "get": {
+        "tags": [
+          "Workout"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutPlan"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutPlan"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutPlan"
+                  }
+                }
+              }
+            }
           }
         }
       }

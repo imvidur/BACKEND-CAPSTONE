@@ -8,22 +8,22 @@ namespace FitnessWorkoutMgmnt.Data
     {
         public FitnessDbContext(DbContextOptions<FitnessDbContext> options) : base(options) { }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<WorkoutPlan> WorkoutPlans { get; set; }
-        public DbSet<Exercise> Exercises { get; set; }
-        public DbSet<WorkoutCategory> WorkoutCategories { get; set; }
+        public DbSet<User>? Users { get; set; }
+        public DbSet<WorkoutPlan>? WorkoutPlans { get; set; }
+        public DbSet<Exercise>? Exercises { get; set; }
+        public DbSet<WorkoutCategory>? WorkoutCategories { get; set; }
         
-        public DbSet<Payment> Payments { get; set; }
-        public DbSet<ProgressTracking> ProgressTrackings { get; set; }
-        public DbSet<MealPlan> MealPlans { get; set; }
-        public DbSet<FitnessClass> FitnessClass { get; set; }
-        public DbSet<Subscription> Subscriptions { get; set; }
-        public DbSet<Challenge> Challenges { get; set; }
+        public DbSet<Payment>? Payments { get; set; }
+        public DbSet<ProgressTracking>? ProgressTrackings { get; set; }
+        public DbSet<MealPlan>? MealPlans { get; set; }
+        public DbSet<FitnessClass>? FitnessClass { get; set; }
+        public DbSet<Subscription>? Subscriptions { get; set; }
+        public DbSet<Challenge>? Challenges { get; set; }
 
-        public DbSet<UserChallenge> UserChallenges { get; set; }
-        public DbSet<Workout> Workouts { get; set; }
-        public DbSet<Message> Messages { get; set; }
-        public DbSet<Report> Reports { get; set; }
+        public DbSet<UserChallenge>? UserChallenges { get; set; }
+        public DbSet<Workout>? Workouts { get; set; }
+        public DbSet<Message>? Messages { get; set; }
+        public DbSet<Report>? Reports { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -33,7 +33,7 @@ namespace FitnessWorkoutMgmnt.Data
                 .HasOne(w => w.User)
                 .WithMany(u => u.Workouts)
                 .HasForeignKey(w => w.UserId)
-                .OnDelete(DeleteBehavior.Cascade); // Prevent cascade delete
+                .OnDelete(DeleteBehavior.Cascade); 
 
             // Workout-WorkoutPlan Relationship (One-to-Many)
             modelBuilder.Entity<Workout>()
@@ -47,20 +47,20 @@ namespace FitnessWorkoutMgmnt.Data
                 .HasOne(m => m.Sender)
                 .WithMany(u => u.SentMessages)
                 .HasForeignKey(m => m.SenderId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Message>()
                 .HasOne(m => m.Receiver)
                 .WithMany(u => u.ReceivedMessages)
                 .HasForeignKey(m => m.ReceiverId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .OnDelete(DeleteBehavior.SetNull); 
 
             // User-Report Relationship (One-to-Many)
             modelBuilder.Entity<Report>()
                 .HasOne(r => r.User)
                 .WithMany(u => u.Reports)
                 .HasForeignKey(r => r.UserId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .OnDelete(DeleteBehavior.Restrict); 
 
             // User-ProgressTracking Relationship (One-to-Many)
             modelBuilder.Entity<ProgressTracking>()

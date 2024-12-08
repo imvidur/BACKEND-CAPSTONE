@@ -17,10 +17,10 @@ namespace FitnessWorkoutMgmnt.Controllers
             _messageService = messageService;
         }
 
-        [HttpGet("{senderId}/{receiverId}")]
-        public async Task<ActionResult<IEnumerable<Message>>> GetMessages(int senderId, int receiverId)
+        [HttpGet("{senderId}")]
+        public async Task<ActionResult<IEnumerable<Message>>> GetMessages(int senderId)
         {
-            var messages = await _messageService.GetMessagesBetweenUsers(senderId, receiverId);
+            var messages = await _messageService.GetMessagesBetweenUsers(senderId);
             return Ok(messages);
         }
 

@@ -14,6 +14,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         private readonly IFitnessClassService _fitnessClassService = fitnessClassService;
 
         [HttpGet]
+        //[Authorize(Policy ="AdminTrainerOnly")]
         public async Task<ActionResult<IEnumerable<FitnessClass>>> GetAllFitnessClasses()
         {
             var fitnessClasses = await _fitnessClassService.GetAllFitnessClassesAsync();
@@ -30,7 +31,8 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPost]
-        //[Authorize(Roles = "Admin")]
+        //[Authorize(Policy ="AdminTrainerOnly")]
+
         public async Task<ActionResult<FitnessClass>> CreateFitnessClass(FitnessClass fitnessClass)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -39,6 +41,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpPut("{id}")]
+        //[Authorize(Policy ="AdminTrainerOnly")]
         public async Task<IActionResult> UpdateFitnessClass(int id, FitnessClass fitnessClass)
         {
             if (id != fitnessClass.ClassId)
@@ -48,6 +51,7 @@ namespace FitnessWorkoutMgmnt.Controllers
         }
 
         [HttpDelete("{id}")]
+        //[Authorize(Policy ="AdminTrainerOnly")]
         public async Task<IActionResult> DeleteFitnessClass(int id)
         {
             await _fitnessClassService.DeleteFitnessClassAsync(id);

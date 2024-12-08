@@ -40,7 +40,6 @@ namespace FitnessWorkoutMgmnt.Repository
             existingClass.Category = fitnessClass.Category;
             existingClass.Location = fitnessClass.Location;
             existingClass.MaximumCapacity = fitnessClass.MaximumCapacity;
-            // Update other fields
 
             await _context.SaveChangesAsync();
             return existingClass;

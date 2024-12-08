@@ -3,28 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Migrations\\20241205160457_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241205160457_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\services\\fitnessclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:services\\fitnessclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\challengerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\challengerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\data\\fitnessdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:data\\fitnessdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\workoutcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\workoutcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\mealplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\mealplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\fitnessclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\fitnessclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\repository\\imealplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:repository\\imealplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\workoutcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\workoutcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\userchallenge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\userchallenge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\mealplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\mealplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\progresstracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\progresstracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\challenge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\challenge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\models\\fitnessclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:models\\fitnessclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\controllers\\workoutcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:controllers\\workoutcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|c:\\users\\kiit01\\source\\repos\\fitnessworkoutmgmnt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E49FA3C-9E9E-44FA-8C09-4BF8F25D2221}|FitnessWorkoutMgmnt.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,39 +117,21 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 389,
+          "DockedWidth": 11,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAiwHYAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:36:05.476Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-12-08T14:54:15.183Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241205160457_MigrationName.cs",
-              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Migrations\\20241205160457_MigrationName.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241205160457_MigrationName.cs",
-              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Migrations\\20241205160457_MigrationName.cs",
-              "RelativeToolTip": "Migrations\\20241205160457_MigrationName.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAiwPwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:04:57.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
@@ -75,49 +141,309 @@
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
               "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\JwtService.cs",
               "RelativeToolTip": "Services\\JwtService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:38:14.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-05T06:49:47.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAApwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:03:01.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T14:54:06.346Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\PaymentsController.cs",
-              "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAnAAAAAAAAAA==",
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Services\\PaymentService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:06:57.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T14:54:04.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\IPaymentService.cs",
+              "RelativeToolTip": "Services\\IPaymentService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:54:02.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FitnessClassService.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\FitnessClassService.cs",
+              "RelativeDocumentMoniker": "Services\\FitnessClassService.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Services\\FitnessClassService.cs",
+              "RelativeToolTip": "Services\\FitnessClassService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:53:59.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkoutCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\WorkoutCategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\WorkoutCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\WorkoutCategoryRepository.cs",
+              "RelativeToolTip": "Repository\\WorkoutCategoryRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:45.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\SubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\SubscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\SubscriptionRepository.cs",
+              "RelativeToolTip": "Repository\\SubscriptionRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:41.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MealPlanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\MealPlanRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\MealPlanRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\MealPlanRepository.cs",
+              "RelativeToolTip": "Repository\\MealPlanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:39.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ISubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\ISubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ISubscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\ISubscriptionRepository.cs",
+              "RelativeToolTip": "Repository\\ISubscriptionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:38.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FitnessDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Data\\FitnessDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\FitnessDbContext.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Data\\FitnessDbContext.cs",
+              "RelativeToolTip": "Data\\FitnessDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:49:40.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChallengeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\ChallengeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ChallengeRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\ChallengeRepository.cs",
+              "RelativeToolTip": "Repository\\ChallengeRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAEwBYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:26.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FitnessClassRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\FitnessClassRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\FitnessClassRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\FitnessClassRepository.cs",
+              "RelativeToolTip": "Repository\\FitnessClassRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:33.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IMealPlanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\IMealPlanRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IMealPlanRepository.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Repository\\IMealPlanRepository.cs",
+              "RelativeToolTip": "Repository\\IMealPlanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:32.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WorkoutCategory.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\WorkoutCategory.cs",
+              "RelativeDocumentMoniker": "Models\\WorkoutCategory.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\WorkoutCategory.cs",
+              "RelativeToolTip": "Models\\WorkoutCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:23.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserChallenge.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\UserChallenge.cs",
+              "RelativeDocumentMoniker": "Models\\UserChallenge.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\UserChallenge.cs",
+              "RelativeToolTip": "Models\\UserChallenge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:21.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:18.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MealPlan.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\MealPlan.cs",
+              "RelativeDocumentMoniker": "Models\\MealPlan.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\MealPlan.cs",
+              "RelativeToolTip": "Models\\MealPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:17.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProgressTracking.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\ProgressTracking.cs",
+              "RelativeDocumentMoniker": "Models\\ProgressTracking.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\ProgressTracking.cs",
+              "RelativeToolTip": "Models\\ProgressTracking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:16.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Models\\Report.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Report.cs",
+              "RelativeToolTip": "Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:15.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Exercise.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Exercise.cs",
+              "RelativeDocumentMoniker": "Models\\Exercise.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Exercise.cs",
+              "RelativeToolTip": "Models\\Exercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:12.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FitnessClass.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\FitnessClass.cs",
+              "RelativeDocumentMoniker": "Models\\FitnessClass.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\FitnessClass.cs",
+              "RelativeToolTip": "Models\\FitnessClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:10.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Challenge.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Challenge.cs",
+              "RelativeDocumentMoniker": "Models\\Challenge.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Models\\Challenge.cs",
+              "RelativeToolTip": "Models\\Challenge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:50:10.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "WorkoutController.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\WorkoutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkoutController.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\WorkoutController.cs",
+              "RelativeToolTip": "Controllers\\WorkoutController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:49:16.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WorkoutCategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\WorkoutCategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkoutCategoryController.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\WorkoutCategoryController.cs",
+              "RelativeToolTip": "Controllers\\WorkoutCategoryController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:48:27.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:48:01.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\KIIT01\\source\\repos\\FitnessWorkoutMgmnt\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAH8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:43:01Z"
             }
           ]
         },

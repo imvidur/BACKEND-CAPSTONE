@@ -6,7 +6,10 @@ namespace FitnessWorkoutMgmnt.Repository
     {
         Task<IEnumerable<Challenge>> GetAllChallenges();
         Task<Challenge> CreateChallenge(Challenge challenge);
-        Task<IEnumerable<Challenge>> GetChallengesForUser(int userId);
-        Task<Challenge> UpdateChallenge(Challenge challenge);
+        Task<Challenge> GetChallengeByIdAsync(int userId);
+        Task<Challenge> UpdateChallenge(int challengeId, Challenge challenge);
+
+        Task DeleteChallengeAsync(int id);
+
     }
 }

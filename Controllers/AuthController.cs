@@ -40,7 +40,7 @@ namespace FitnessWorkoutMgmnt.Controllers
             }
 
             var token = _jwtService.GenerateToken(user);
-            return Ok(new { Token = token, Role = user.Role, Success=true });
+            return Ok(new { Token = token, Role = user.Role, Success=true, clientId=user.UserId });
         }
 
         [AllowAnonymous]
@@ -66,6 +66,25 @@ namespace FitnessWorkoutMgmnt.Controllers
             await _context.SaveChangesAsync();
 
             return Ok("User registered successfully.");
+        }
+
+        [HttpGet("getData")]
+        public IActionResult GetDashboardData()
+        {
+            var totalUsers = _context.Users.Count(u=>u.Role=="Client");
+            var totalTrainers = _context.Users.Count(u => u.Role == "Trainer");
+            var totalNutritionists = _context.Users.Count(u => u.Role == "Nutritionist");
+
+            var data = new
+            {
+                TotalUsers = totalUsers,
+                TotalTrainers = totalTrainers,
+                TotalNutritionists = totalNutritionists,
+                WorkingHours = "6 AM - 10 PM",
+                IsGymActive = true
+            };
+
+            return Ok(data);
         }
 
     }
